@@ -1,0 +1,50 @@
+@font-face
+  font-family: Baron
+  src: url(../assets/fonts/Baron.otf)
+
+$main-dark: #37474F
+$main: #252627
+$left-panel: #181818
+$text-color-main: white
+$nav-width: 60px
+
+body
+  color: $text-color-main
+  padding: 0
+  margin: 0
+  background-color: $main
+
+.main
+  background-color: $main
+  overflow: hidden
+  margin-left: $nav-width
+  position: relative
+
+.nav-bar
+  background-color: $left-panel
+  width: $nav-width
+  height: 100%
+  position: fixed
+  //top:0
+  z-index: 3
+  min-height: 500px
+  float: left
+
+#name
+  text-align: center
+  font-size: 80px
+  font-family: 'Baron'
+
+.decorator
+  color: white
+
+//particles from here
+#particles-js
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: $main
+  background-image: url("")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
